@@ -2,6 +2,12 @@
 
 ReconAI is a deterministic finance-controller system built for the **Razorpay Buildathon — Track 04: AI Finance Controller (Multi-Source Reconciliation)**.
 
+## Live Demo
+
+**Open ReconAI:** [https://reconai-iota.vercel.app](https://reconai-iota.vercel.app)
+
+The live frontend is deployed on Vercel and connects to the ReconAI backend hosted on Railway.
+
 It reconciles financial records across multiple sources such as Razorpay payments, merchant ledger entries, and settlement evidence using a reliability-first pipeline:
 
 **Exact Match → Fuzzy / Windowed Match → Exception Quarantine**
