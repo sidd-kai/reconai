@@ -6,3 +6,13 @@ node_modules/
 .next/
 *.log
 .DS_Store
+
+# Runtime reconciliation artifacts
+data/results/razorpay_webhook_*.jsonl
+data/results/razorpay_demo/*.jsonl
+
+# Frontend local environment
+frontend/.env.local
+
+# TypeScript build cache
+*.tsbuildinfo

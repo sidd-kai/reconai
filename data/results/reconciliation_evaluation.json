@@ -1,0 +1,145 @@
+{
+  "automatic_match_rate": 0.705,
+  "canonical_transactions": 1000,
+  "classification_accuracy": 1.0,
+  "duplicate_ledger_consumption": {},
+  "duplicate_payment_consumption": {},
+  "duplicate_settlement_usage": {},
+  "engine_decisions_raw": 1010,
+  "engine_decisions_unique": 1000,
+  "evaluation_elapsed_seconds": 0.13474270002916455,
+  "evaluation_throughput_records_per_second": 7421.552334809631,
+  "exception_count": 295,
+  "exception_manifest": {
+    "coverage_rate": 1.0,
+    "expected_current_exceptions": 295,
+    "file_exists": true,
+    "malformed_rows": 0,
+    "manifest_current_exceptions": 295,
+    "missing_transaction_ids": [],
+    "orphan_transaction_ids": [],
+    "primary_exception_count": 295,
+    "supplemental_exception_count": 10,
+    "supplemental_exception_ids": [
+      "txn_00180",
+      "txn_00211",
+      "txn_00336",
+      "txn_00488",
+      "txn_00527",
+      "txn_00793",
+      "txn_00809",
+      "txn_00855",
+      "txn_00890",
+      "txn_00950"
+    ],
+    "total_events": 1202
+  },
+  "exception_rate": 0.295,
+  "extra_engine_count": 0,
+  "extra_engine_ids": [],
+  "extra_engine_status_counts": {},
+  "extra_resolved_ids": [],
+  "f1": 1.0,
+  "false_negative": 0,
+  "false_negative_ids": [],
+  "false_positive": 0,
+  "false_positive_ids": [],
+  "ground_truth_duplicate_transaction_ids": [],
+  "ground_truth_malformed_rows": 0,
+  "integrity_failures": [],
+  "integrity_passed": true,
+  "linkage_correct": 705,
+  "linkage_evaluable": true,
+  "linkage_f1": 1.0,
+  "linkage_fields": {
+    "ledger_id": "ledger_id",
+    "payment_id": "payment_id",
+    "settlement_id": "settlement_id"
+  },
+  "linkage_missed": 0,
+  "linkage_precision": 1.0,
+  "linkage_recall": 1.0,
+  "linkage_wrong": 0,
+  "missing_canonical_count": 0,
+  "missing_canonical_ids": [],
+  "precision": 1.0,
+  "recall": 1.0,
+  "repeated_transaction_count": 10,
+  "repeated_transaction_ids": [
+    "txn_00180",
+    "txn_00211",
+    "txn_00336",
+    "txn_00488",
+    "txn_00527",
+    "txn_00793",
+    "txn_00809",
+    "txn_00855",
+    "txn_00890",
+    "txn_00950"
+  ],
+  "resolved_count": 705,
+  "result_malformed_rows": 0,
+  "scenario_metrics": {
+    "AMBIGUOUS_MATCH": {
+      "accuracy": 1.0,
+      "correct": 6,
+      "total": 6
+    },
+    "AMOUNT_MISMATCH": {
+      "accuracy": 1.0,
+      "correct": 100,
+      "total": 100
+    },
+    "DUPLICATE_LEDGER": {
+      "accuracy": 1.0,
+      "correct": 40,
+      "total": 40
+    },
+    "MATCH": {
+      "accuracy": 1.0,
+      "correct": 650,
+      "total": 650
+    },
+    "MISSING_LEDGER": {
+      "accuracy": 1.0,
+      "correct": 75,
+      "total": 75
+    },
+    "MISSING_PAYMENT": {
+      "accuracy": 1.0,
+      "correct": 50,
+      "total": 50
+    },
+    "REFERENCE_CORRUPTION": {
+      "accuracy": 1.0,
+      "correct": 25,
+      "total": 25
+    },
+    "SETTLEMENT_MISMATCH": {
+      "accuracy": 1.0,
+      "correct": 20,
+      "total": 20
+    },
+    "TIMESTAMP_DRIFT": {
+      "accuracy": 1.0,
+      "correct": 30,
+      "total": 30
+    },
+    "UNRESOLVED": {
+      "accuracy": 1.0,
+      "correct": 4,
+      "total": 4
+    }
+  },
+  "supplemental_exception_count": 10,
+  "supplemental_resolved_count": 0,
+  "supplemental_result_count": 10,
+  "supplemental_status_counts": {
+    "MISSING_PAYMENT": 10
+  },
+  "true_negative": 295,
+  "true_positive": 705,
+  "unknown_engine_statuses": [],
+  "unsafe_duplicate_decisions": [],
+  "wrong_linkage_ids": []
+}

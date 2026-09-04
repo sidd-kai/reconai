@@ -1,0 +1,91 @@
+{
+  "benchmark_type": "reconciliation_engine",
+  "configuration": {
+    "timed_runs": 5,
+    "warmup_runs": 1
+  },
+  "deterministic_across_runs": true,
+  "integrity_failures": [],
+  "integrity_passed": true,
+  "latency_seconds": {
+    "max": 4.5039951000362635,
+    "mean": 4.260115440003574,
+    "median": 4.192700700019486,
+    "min": 4.134611899964511
+  },
+  "results": {
+    "canonical_status_counts": {
+      "AMBIGUOUS": 46,
+      "AMOUNT_MISMATCH": 176,
+      "DUPLICATE": 3,
+      "MATCHED": 705,
+      "MISSING_PAYMENT": 50,
+      "SETTLEMENT_MISMATCH": 20
+    },
+    "canonical_transactions": 1000,
+    "exception_rate": 0.295,
+    "exceptions": 295,
+    "match_rate": 0.705,
+    "raw_decisions": 1010,
+    "resolved": 705,
+    "supplemental_source_events": 10,
+    "supplemental_status_counts": {
+      "MISSING_PAYMENT": 10
+    },
+    "unsafe_duplicate_resolutions": {}
+  },
+  "runs": [
+    {
+      "canonical_records_per_second": 222.0251083292583,
+      "canonical_transactions": 1000,
+      "elapsed_seconds": 4.5039951000362635,
+      "raw_decisions": 1010,
+      "raw_decisions_per_second": 224.2453594125509,
+      "run_number": 1
+    },
+    {
+      "canonical_records_per_second": 238.50975100496737,
+      "canonical_transactions": 1000,
+      "elapsed_seconds": 4.192700700019486,
+      "raw_decisions": 1010,
+      "raw_decisions_per_second": 240.89484851501703,
+      "run_number": 2
+    },
+    {
+      "canonical_records_per_second": 241.86066895627695,
+      "canonical_transactions": 1000,
+      "elapsed_seconds": 4.134611899964511,
+      "raw_decisions": 1010,
+      "raw_decisions_per_second": 244.27927564583973,
+      "run_number": 3
+    },
+    {
+      "canonical_records_per_second": 240.84611359218192,
+      "canonical_transactions": 1000,
+      "elapsed_seconds": 4.152028799988329,
+      "raw_decisions": 1010,
+      "raw_decisions_per_second": 243.25457472810373,
+      "run_number": 4
+    },
+    {
+      "canonical_records_per_second": 231.62942941723188,
+      "canonical_transactions": 1000,
+      "elapsed_seconds": 4.317240700009279,
+      "raw_decisions": 1010,
+      "raw_decisions_per_second": 233.94572371140418,
+      "run_number": 5
+    }
+  ],
+  "source_rows": {
+    "ledger": 971,
+    "payments": 950,
+    "settlements": 1000
+  },
+  "throughput": {
+    "canonical_records_per_second_mean": 234.97421425998328,
+    "canonical_records_per_second_median": 238.50975100496737,
+    "raw_decisions_per_second_mean": 237.32395640258312,
+    "raw_decisions_per_second_median": 240.89484851501703
+  },
+  "timing_scope": "ReconciliationEngine.reconcile only; includes audit and exception JSONL writes; excludes source loading and benchmark reporting"
+}
